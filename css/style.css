@@ -1,0 +1,46 @@
+body{
+    background-image: url('../assests/img/kosmos.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem a linha */
+    height: 100vh; /* Altura do contêiner igual à altura da janela de visualização */
+  }
+  .element {
+    flex: 1 1 100%; /* Faz com que os elementos cresçam igualmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo-content{
+    height: 20vh;
+    padding-top: 15px;
+  }
+
+  #logo-content img{
+    max-height: 20vh;
+    width: auto;
+  }
+
+  #carousel-patrocinadores{
+    height: 25vh;
+   }
+
+   #carousel-patrocinadores img{
+    max-height: 20vh;
+    width: auto;
+   }
+
+   #meio{
+    height: 55vh;
+   }
+
+   #meio img{
+    max-height: 50vh;
+    width: auto;
+   }
