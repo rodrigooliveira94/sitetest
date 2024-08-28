@@ -8,8 +8,7 @@ body{
 .container-flex {
     display: flex;
     flex-wrap: wrap; /* Permite que os elementos quebrem a linha */
-    height: 100vh;
-    padding: 10px; /* Altura do contêiner igual à altura da janela de visualização */
+    height: 100vh; /* Altura do contêiner igual à altura da janela de visualização */
   }
   .element {
     flex: 1 1 100%; /* Faz com que os elementos cresçam igualmente */
@@ -19,11 +18,11 @@ body{
   }
 
   #logo-content{
-    height: 25vh;
+    height: 20vh;
   }
 
   #logo-content img{
-    max-height: 20vh;
+    max-height: 18vh;
     width: auto;
   }
 
@@ -32,8 +31,7 @@ body{
    }
 
    #carousel-patrocinadores img{
-     max-width: 100%;
-     height: auto;
+     max-height: 24vh;
     }
 
    #meio{
@@ -41,7 +39,6 @@ body{
    }
 
    #meio img{
-    max-width: 100%;
-    height: auto;
+    max-height: 50vh;
    }
 
