@@ -25,6 +25,10 @@ body{
     height: 70vh;
   }
 
+  #content-2 img{
+    max-height: 70vh;
+  }
+
   #logo-content img{
     max-height: 18vh;
     width: auto;
@@ -49,10 +53,16 @@ body{
    .table-ranking {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    max-height: 70vh;
    }
 
    .table-ranking table {
     color: white;
+   }
+
+   .table td, .table th {
+    padding: 0.2rem;
+    vertical-align: middle;
    }
 
    #carousel-ranking {
