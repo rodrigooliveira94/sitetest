@@ -18,7 +18,11 @@ body{
   }
 
   #logo-content{
-    height: 20vh;
+    height: 30vh;
+  }
+
+  #content-2{
+    height: 70vh;
   }
 
   #logo-content img{
@@ -42,3 +46,19 @@ body{
     max-height: 50vh;
    }
 
+   .table-ranking {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+   }
+
+   .table-ranking table {
+    color: white;
+   }
+
+   #carousel-ranking {
+    height: 100%;
+   }
+
+   .carousel-inner {
+    height: 100%;
+   }
