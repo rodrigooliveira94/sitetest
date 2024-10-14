@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Columns Layout</title>
+    <style>
+        body, html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            display: flex;
+        }
+        .column {
+            height: 100%;
+        }
+        .left, .right {
+            width: 25%;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        
+        .left img, .right img{
+            width: 50%;
+            margin-top: 60%;
+        }
+
+        .center {
+            width: 50%;
+            background-color: #ffffff;
+        }
+
+        .center table {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="column left">
+        <img src="./assests/img/logo.png" class="d-block mx-auto logo" alt="Responsive image">
+    </div>
+    <div class="column center">
+        <table>
+            <tr>
+                <td>
+                    <h1>WELCOME TO OUR WEBSITE</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultrices aliquam. Nullam nec purus ac libero ultrices aliquam.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="column right">
+        <img src="./assests/img/logo.png" class="d-block mx-auto logo" alt="Responsive image">
+
+    </div>
+</body>
+</html>
+
+
