@@ -59,84 +59,371 @@
     </style>
 </head>
 <body>
-                <table>
-                    <tr>
-                        <td class="left">
-                            <img src="./assests/img/logo.png" class="d-block mx-auto logo" alt="Responsive image">
-                        </td>
-                        <td class="center">
-                            
-                            <div id="carousel-ranking" class="carousel slide w-100" data-ride="carousel" data-interval="10000" data-pause="false">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <table>
-                                            <tr>
-                                                <td style="vertical-align: bottom;">
-                                                    <img src="./assests/img/head_ranking_toyota_tsusho_group.png" width="100%">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="vertical-align: top;padding-top: 20px;">
-                                                    <img src="./assests/img/head_cat_especial.png" width="100%">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="vertical-align: top;">
-                                                    <div style="background-color: #ffffff;position: relative; height: auto; border-radius: 15px; padding: 10px;font-size: 22px;">
-                                                        <table class="table-ranking">
-                                                            <tr>
-                                                                <td><b>#</b></td>
-                                                                <td></td>
-                                                                <td><b>Nome</b></td>
-                                                                <td><b>Pontos</b></td>
-                                                            </tr>
-                                                            <tbody id="ranking-cat-a"></tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="right">
-                            <img src="./assests/img/logo-tenis.png" class="d-block mx-auto logo" alt="Responsive image">
-                        </td>
-                    </tr>
-                </table>
+    <table>
+        <tr>
+            <td class="left">
+                <img src="./assests/img/logo.png" class="d-block mx-auto logo" alt="Responsive image">
+            </td>
+            <td class="center" align="center">
+                <img src="./assests/img/load.gif" id="load" style="margin: auto;">
+                <div id="carousel-ranking" class="carousel slide w-100" data-ride="carousel" data-interval="10000" data-pause="false" >
+                    <div class="carousel-inner">
+                        <!--CATEGORIA ESPECIAL-->
+                        <div class="carousel-item active">
+                            <table>
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <img src="./assests/img/head_ranking_toyota_tsusho_group.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;padding-top: 20px;">
+                                        <img src="./assests/img/head_cat_especial.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <div style="background-color: #ffffff;position: relative; height: auto; border-radius: 15px; padding: 10px;font-size: 22px;">
+                                            <table class="table-ranking">
+                                                <tr>
+                                                    <td align="center"><b>#</b></td>
+                                                    <td><b>Nome</b></td>
+                                                    <td><b>Pontos</b></td>
+                                                </tr>
+                                                <tbody id="ranking-cat-especial"></tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--PATROCINADOR-->
+                        <div class="carousel-item">
+                            <table style="width: 80%;">
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <img src="./assests/img/carvalho-e-costa.png" width="100%">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--CATEGORIA A-->
+                        <div class="carousel-item">
+                            <table>
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <img src="./assests/img/head_ranking_toyota_tsusho_group.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;padding-top: 20px;">
+                                        <img src="./assests/img/head_cat_a.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <div style="background-color: #ffffff;position: relative; height: auto; border-radius: 15px; padding: 10px;font-size: 22px;">
+                                            <table class="table-ranking">
+                                                <tr>
+                                                    <td align="center"><b>#</b></td>
+                                                    <td><b>Nome</b></td>
+                                                    <td><b>Pontos</b></td>
+                                                </tr>
+                                                <tbody id="ranking-cat-a"></tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--PATROCINADOR-->
+                        <div class="carousel-item">
+                            <table style="width: 80%;">
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <img src="./assests/img/carvalho-e-costa.png" width="100%">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--CATEGORIA B-->
+                        <div class="carousel-item">
+                            <table>
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <img src="./assests/img/head_ranking_toyota_tsusho_group.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;padding-top: 20px;">
+                                        <img src="./assests/img/head_cat_b.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <div style="background-color: #ffffff;position: relative; height: auto; border-radius: 15px; padding: 10px;font-size: 22px;">
+                                            <table class="table-ranking">
+                                                <tr>
+                                                    <td align="center"><b>#</b></td>
+                                                    <td><b>Nome</b></td>
+                                                    <td><b>Pontos</b></td>
+                                                </tr>
+                                                <tbody id="ranking-cat-b"></tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--CATEGORIA C-->
+                        <div class="carousel-item">
+                            <table>
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <img src="./assests/img/head_ranking_toyota_tsusho_group.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;padding-top: 20px;">
+                                        <img src="./assests/img/head_cat_c.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <div style="background-color: #ffffff;position: relative; height: auto; border-radius: 15px; padding: 10px;font-size: 22px;">
+                                            <table class="table-ranking">
+                                                <tr>
+                                                    <td align="center"><b>#</b></td>
+                                                    <td><b>Nome</b></td>
+                                                    <td><b>Pontos</b></td>
+                                                </tr>
+                                                <tbody id="ranking-cat-c"></tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--CATEGORIA INICIANTE-->
+                        <div class="carousel-item">
+                            <table>
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <img src="./assests/img/head_ranking_toyota_tsusho_group.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;padding-top: 20px;">
+                                        <img src="./assests/img/head_cat_iniciante.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <div style="background-color: #ffffff;position: relative; height: auto; border-radius: 15px; padding: 10px;font-size: 22px;">
+                                            <table class="table-ranking">
+                                                <tr>
+                                                    <td align="center"><b>#</b></td>
+                                                    <td><b>Nome</b></td>
+                                                    <td><b>Pontos</b></td>
+                                                </tr>
+                                                <tbody id="ranking-cat-iniciante"></tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--CATEGORIA DUPLAS OURO-->
+                        <div class="carousel-item">
+                            <table>
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <img src="./assests/img/head_ranking_toyota_tsusho_group.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;padding-top: 20px;">
+                                        <img src="./assests/img/head_cat_duplas_ouro.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <div style="background-color: #ffffff;position: relative; height: auto; border-radius: 15px; padding: 10px;font-size: 22px;">
+                                            <table class="table-ranking">
+                                                <tr>
+                                                    <td align="center"><b>#</b></td>
+                                                    <td><b>Nome</b></td>
+                                                    <td><b>Pontos</b></td>
+                                                </tr>
+                                                <tbody id="ranking-cat-DuplasOuro"></tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--CATEGORIA DUPLAS PRATA-->
+                        <div class="carousel-item">
+                            <table>
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <img src="./assests/img/head_ranking_toyota_tsusho_group.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;padding-top: 20px;">
+                                        <img src="./assests/img/head_cat_duplas_prata.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <div style="background-color: #ffffff;position: relative; height: auto; border-radius: 15px; padding: 10px;font-size: 22px;">
+                                            <table class="table-ranking">
+                                                <tr>
+                                                    <td align="center"><b>#</b></td>
+                                                    <td><b>Nome</b></td>
+                                                    <td><b>Pontos</b></td>
+                                                </tr>
+                                                <tbody id="ranking-cat-DuplasPrata"></tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--CATEGORIA DUPLAS 60+-->
+                        <div class="carousel-item">
+                            <table>
+                                <tr>
+                                    <td style="vertical-align: bottom;">
+                                        <img src="./assests/img/head_ranking_toyota_tsusho_group.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;padding-top: 20px;">
+                                        <img src="./assests/img/head_cat_duplas_60+.png" width="100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <div style="background-color: #ffffff;position: relative; height: auto; border-radius: 15px; padding: 10px;font-size: 22px;">
+                                            <table class="table-ranking">
+                                                <tr>
+                                                    <td align="center"><b>#</b></td>
+                                                    <td><b>Nome</b></td>
+                                                    <td><b>Pontos</b></td>
+                                                </tr>
+                                                <tbody id="ranking-cat-Dupla60"></tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="right">
+                <img src="./assests/img/logo-tenis.png" class="d-block mx-auto logo" alt="Responsive image">
+            </td>
+        </tr>
+    </table>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
     <script src="./js/bootstrap.min.js" ></script>
     <script type="text/javascript">
-        
-        //fazer chamada $ajax para o servidor
-        
-        $.ajax({
-            url: 'http://127.0.0.1:8000/webscraper/scrape/',
-            type: 'GET',
-            success: function(data){
-                var js = data;
+        var dataTemp = `[{"name": "Lauro Saito", "position": "1\u00b0", "score": "1650", "image": "assests/img/no-image.png", "cat": "Especial"}, {"name": "Fabio Waki", "position": "2\u00b0", "score": "1500", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1712017887/byfzr0k9uc108hb0nwa1.png", "cat": "Especial"}, {"name": "Ricardo Shindi", "position": "3\u00b0", "score": "1475", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1518988644/rrwsvssiynf7xk181hzl.png", "cat": "Especial"}, {"name": "Sidney Waki", "position": "4\u00b0", "score": "1425", "image": "assests/img/no-image.png", "cat": "Especial"}, {"name": "Kal\u00e9o Martins", "position": "5\u00b0", "score": "1350", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1718344557/xrhofehccfohvbthysig.png", "cat": "Especial"}, {"name": "Roberto Kenji", "position": "6\u00b0", "score": "1350", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1653571580/fw4rcozpfwsckskjxvub.png", "cat": "Especial"}, {"name": "Marcos Suzuki", "position": "7\u00b0", "score": "1325", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1548941232/lb7y6bkdhfbnavcohtsh.png", "cat": "Especial"}, {"name": "Leonardo Ota", "position": "8\u00b0", "score": "1150", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1652446784/wlhgmwfgsqjzahrhielg.png", "cat": "Especial"}, {"name": "Rafael Luques", "position": "1\u00b0", "score": "1625", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1596473238/ium2wjstnzhe7nvkwksd.png", "cat": "A"}, {"name": "Luiz Gustavo Prado Vidolin", "position": "2\u00b0", "score": "1600", "image": "assests/img/no-image.png", "cat": "A"}, {"name": "Sergio Nakamura", "position": "3\u00b0", "score": "1550", "image": "assests/img/no-image.png", "cat": "A"}, {"name": "Sandra Yakabi", "position": "4\u00b0", "score": "1375", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1631827408/bcmxr0fvba6omdvshyaa.png", "cat": "A"}, {"name": "S\u00e9rgio Morelli Carettoni", "position": "5\u00b0", "score": "1300", "image": "assests/img/no-image.png", "cat": "A"}, {"name": "Pedro Sanches", "position": "6\u00b0", "score": "1250", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1698023971/umsgmfcepdtrbebkpvfw.png", "cat": "A"}, {"name": "Luis Sanches", "position": "7\u00b0", "score": "1225", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1626787086/rfn2vuirzp83api6atr7.png", "cat": "A"}, {"name": "Mario Sheng", "position": "8\u00b0", "score": "1150", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1571242365/fuihovv5aydvczrhv4n3.png", "cat": "A"}, {"name": "Erwin Alves Justiniano Junior", "position": "1\u00b0", "score": "1725", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1712583858/pbbqlh3fhgtzttgazmzb.png", "cat": "B"}, {"name": "Richard Ratcliffe", "position": "2\u00b0", "score": "1550", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1698092747/ry6byozy11cl1rjlcbb1.png", "cat": "B"}, {"name": "Diego Moniwa", "position": "3\u00b0", "score": "1500", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1707518651/wqmqa5r34lwpdmeecqwu.png", "cat": "B"}, {"name": "Felipe Marques", "position": "4\u00b0", "score": "1475", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1705150663/w4jdmlpotgedbomgsvf8.png", "cat": "B"}, {"name": "Fabio Nakano", "position": "5\u00b0", "score": "1400", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1552859502/sjddg8ggqxlzho30cp8u.png", "cat": "B"}, {"name": "Jos\u00e9 Meloni", "position": "6\u00b0", "score": "1375", "image": "assests/img/no-image.png", "cat": "B"}, {"name": "Ivan Tobias", "position": "7\u00b0", "score": "1375", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1630436697/eb48vwmnflkhbgj8bxnm.png", "cat": "B"}, {"name": "Pedro Shodi Kimoto", "position": "8\u00b0", "score": "1300", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1683429934/qgq8rptepswkkflp1n5f.png", "cat": "B"}, {"name": "Caio Hsu", "position": "1\u00b0", "score": "1700", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1661876628/q6mghj5eag6ip8p1gkgu.png", "cat": "C"}, {"name": "Fernando Iraha", "position": "2\u00b0", "score": "1625", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1675802160/gourj0cogzxk72tmcdrk.png", "cat": "C"}, {"name": "Matheus Caldeira", "position": "3\u00b0", "score": "1525", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1706198392/gx5zzmcbowdxibzyk2y3.png", "cat": "C"}, {"name": "Felipe Bencini", "position": "4\u00b0", "score": "1475", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1637966529/glzu9n5mnoofgcvsyo7c.png", "cat": "C"}, {"name": "Amilton Castro", "position": "5\u00b0", "score": "1475", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1625160911/fluvhg7icgzak8xi9f6o.png", "cat": "C"}, {"name": "Ricardo Alexandre De Miranda", "position": "6\u00b0", "score": "1375", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1674313251/rbpnyb9yfwpfybn2mpbs.png", "cat": "C"}, {"name": "Douglas Vaz", "position": "7\u00b0", "score": "1250", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1717686166/tobgewr8b6dys5jjsbrz.png", "cat": "C"}, {"name": "Renan Perrotti", "position": "8\u00b0", "score": "1250", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1705862519/xi2hd3rrx05kakxiqzww.png", "cat": "C"}, {"name": "Fabiana Takahashi", "position": "1\u00b0", "score": "1475", "image": "assests/img/no-image.png", "cat": "Iniciante"}, {"name": "Aline Vavalle Morata Finotto", "position": "2\u00b0", "score": "1175", "image": "assests/img/no-image.png", "cat": "Iniciante"}, {"name": "Ricardo Bittencourt", "position": "3\u00b0", "score": "1000", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1707527197/c27iivtgfynash3c3ecp.png", "cat": "Iniciante"}, {"name": "Izabelita Vargas", "position": "4\u00b0", "score": "1000", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1709257518/alxrfiwfhxhogggvniht.png", "cat": "Iniciante"}, {"name": "Vanessa Okubo", "position": "5\u00b0", "score": "1000", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1695091730/nz1cozwpuypiu1qrydwh.png", "cat": "Iniciante"}, {"name": "Emidio Rodrigues", "position": "6\u00b0", "score": "975", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1712861021/bamthg5nm6syrbzkl0ix.png", "cat": "Iniciante"}, {"name": "Maria Eduarda Bittencourt", "position": "7\u00b0", "score": "925", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1707514227/yrys91nnqrqedf2kky4d.png", "cat": "Iniciante"}, {"name": "Rafael Noguti", "position": "8\u00b0", "score": "800", "image": "assests/img/no-image.png", "cat": "Iniciante"}, {"name": "Kal\u00e9o Martins", "position": "1\u00b0", "score": "2550", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1718344557/xrhofehccfohvbthysig.png", "cat": "DuplasOuro"}, {"name": "Eduardo Sakamoto", "position": "2\u00b0", "score": "2325", "image": "assests/img/no-image.png", "cat": "DuplasOuro"}, {"name": "Vitor Ogassawara", "position": "3\u00b0", "score": "2150", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1646159396/lw7ncnxqjofgzmwi9uxf.png", "cat": "DuplasOuro"}, {"name": "Koiti Takahashi", "position": "4\u00b0", "score": "1950", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1519069699/b4kvtqeabjr6uphuranf.png", "cat": "DuplasOuro"}, {"name": "Edson Senchin Yamamoto", "position": "5\u00b0", "score": "1775", "image": "assests/img/no-image.png", "cat": "DuplasOuro"}, {"name": "Marcelo Costa", "position": "6\u00b0", "score": "1650", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1612228361/xh4ujxgqhjikswbfqzpm.png", "cat": "DuplasOuro"}, {"name": "Rafael Luques", "position": "7\u00b0", "score": "1650", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1596473238/ium2wjstnzhe7nvkwksd.png", "cat": "DuplasOuro"}, {"name": "Erwin Alves Justiniano Junior", "position": "8\u00b0", "score": "1650", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1712583858/pbbqlh3fhgtzttgazmzb.png", "cat": "DuplasOuro"}, {"name": "C\u00e9lio Alves", "position": "1\u00b0", "score": "2025", "image": "assests/img/no-image.png", "cat": "DuplasPrata"}, {"name": "Ednaldo Jose Leandro", "position": "2\u00b0", "score": "1950", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1619457960/chb23a9r9pgtk0g7fbcd.png", "cat": "DuplasPrata"}, {"name": "Alexsandre Del Manto", "position": "3\u00b0", "score": "1925", "image": "assests/img/no-image.png", "cat": "DuplasPrata"}, {"name": "Sinval Oliveira", "position": "4\u00b0", "score": "1925", "image": "assests/img/no-image.png", "cat": "DuplasPrata"}, {"name": "Rodolfo Shiroma", "position": "5\u00b0", "score": "1850", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1693932043/vuhgjoz2rtwkeppmv2kb.png", "cat": "DuplasPrata"}, {"name": "La\u00e9cio Cordeiro", "position": "6\u00b0", "score": "1850", "image": "assests/img/no-image.png", "cat": "DuplasPrata"}, {"name": "Jennie Lin", "position": "7\u00b0", "score": "1800", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1625310478/prvuzzqj2ydzwridnt4j.png", "cat": "DuplasPrata"}, {"name": "Maria Jorge", "position": "8\u00b0", "score": "1800", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1615040882/bchc5zvyz41czzzmtci8.png", "cat": "DuplasPrata"}, {"name": "Marcos Machry", "position": "1\u00b0", "score": "2175", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1517599471/assf8rg5sdykvtunatak.png", "cat": "Dupla60"}, {"name": "Roberto (beto) Mizuta", "position": "2\u00b0", "score": "2100", "image": "assests/img/no-image.png", "cat": "Dupla60"}, {"name": "Teruaki Kanzawa", "position": "3\u00b0", "score": "2025", "image": "assests/img/no-image.png", "cat": "Dupla60"}, {"name": "Edson Kobayashi", "position": "4\u00b0", "score": "1950", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1613496486/gqore6zn7wxxvdw02l6g.png", "cat": "Dupla60"}, {"name": "Sinval Oliveira", "position": "5\u00b0", "score": "1875", "image": "assests/img/no-image.png", "cat": "Dupla60"}, {"name": "Mario Takumi", "position": "6\u00b0", "score": "1875", "image": "assests/img/no-image.png", "cat": "Dupla60"}, {"name": "Masayoshi Yamauchi", "position": "7\u00b0", "score": "1800", "image": "assests/img/no-image.png", "cat": "Dupla60"}, {"name": "Sueli Ikuta", "position": "8\u00b0", "score": "1725", "image": "https://res.cloudinary.com/lptennis/image/upload/c_fit,h_250,q_auto,w_250/v1591314966/sfho7nqxbks3e3pjpdhw.png", "cat": "Dupla60"}]`;
+    
 
-                var tr = '';
-                var cont = 1;
-                
-                js.forEach(d => {
-                    tr = tr+'<tr><td>'+d.position+'</td><td>'+
-                    '<img width="55" align="right" src="'+d.image+'" alt="'+cont+'">'+
-                    '</td><td>'+d.cat+' - '+d.name+'</td><td>'+d.score+' pts.</td></tr>';
-                    cont++
-                });
-                
-                    
-                 $('#ranking-cat-a').html(tr);
-
-            }
+        $(document).ready(function() {
+            $('#carousel-ranking').carousel('pause');            
+            requestData();    
+            setInterval(() => {
+                requestData();    
+            }, 1200000);
         });
-        /*
-        $(document).ready(function(){
-            $(document).height = $(window).height();
-        });*/
-        </script>
+
+        function requestData() {
+            $('#load').show();
+            $("#carousel-ranking").hide();
+            console.log('Requesting data...');
+            renderData(JSON.parse(dataTemp));
+            /*$.ajax({
+                url: 'http://127.0.0.1:8000/webscraper/scrape/',
+                type: 'GET',
+                success: function(data){
+                    console.log('Sucesso');
+                    dataTemp = data;
+                    renderData(dataTemp);
+                },
+                error: function(){
+                    console.log('Error');
+                    if(dataTemp == null){
+                        renderErrorScenary();
+                    } else {
+                        renderData(dataTemp);
+                    }
+                }
+            });*/
+        }
+
+        function renderData(data){
+            var tr = '';
+            var cont = 1;
+            data.forEach((d, index) => {
+                tr += `<tr>
+                        <td align="center">
+                            ${d.position}
+                            &nbsp;&nbsp;&nbsp;
+                            <img width="55" height="55" style="border-radius: 50%;" align="center" src="${d.image}" alt="${index + 1}">
+                        </td>
+                        <td>${d.name}</td>
+                        <td>${d.score} pts.</td>
+                       </tr>`;
+
+                if ((index + 1) % 8 === 0) {
+                    const category = Math.floor(index / 8);
+                    switch (category) {
+                        case 0:
+                            $('#ranking-cat-especial').html(tr);
+                            break;
+                        case 1:
+                            $('#ranking-cat-a').html(tr);
+                            break;
+                        case 2:
+                            $('#ranking-cat-b').html(tr);
+                            break;
+                        case 3:
+                            $('#ranking-cat-c').html(tr);
+                            break;
+                        case 4:
+                            $('#ranking-cat-iniciante').html(tr);
+                            break;
+                        case 5:
+                            $('#ranking-cat-DuplasOuro').html(tr);
+                            break;
+                        case 6:
+                            $('#ranking-cat-DuplasPrata').html(tr);
+                            break;
+                        case 7:
+                            $('#ranking-cat-Dupla60').html(tr);
+                            break;
+                    }
+                    tr = '';
+                }
+            });
+            
+            $('#load').hide();
+            $('#carousel-ranking').carousel('cycle');
+            $("#carousel-ranking").fadeIn(1000);
+        }
+
+        function renderErrorScenary() {
+            var tr = '<tr><td colspan="4">Erro ao carregar os dados</td></tr>';
+            $('#ranking-cat-a').html(tr);
+            $('#load').hide();
+            $("#carousel-ranking").fadeIn(1000);
+        }
+    </script>
 </body>
 </html>
 
