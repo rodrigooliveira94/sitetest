@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/bootstrap.min.css" rel="stylesheet" >
-    <title>Three Columns Layout</title>
+    <title>v1</title>
     <style>
         body{
             background-image: url('./assests/img/kosmos.jpg');
@@ -65,7 +65,7 @@
                 <img src="./assests/img/logo.png" class="d-block mx-auto logo" alt="Responsive image">
             </td>
             <td class="center" align="center">
-                <img src="./assests/img/load.gif" id="load" style="margin: auto;">
+                <!--img src="./assests/img/load.gif" id="load" style="margin: auto;"-->
                 <div id="carousel-ranking" class="carousel slide w-100" data-ride="carousel" data-interval="10000" data-pause="false" >
                     <div class="carousel-inner">
                         <!--CATEGORIA ESPECIAL-->
@@ -361,14 +361,14 @@
                 'alt="First slide"></td> '+
                 '<td>Rodrigo Oliveira</td><td>1250 pts.</td></tr>');
 
-            $('#load').show();
-            $("#carousel-ranking").hide();
-            console.log('Requesting data...');
-            setTimeout(() => {
-            $('#load').hide();
-            $('#carousel-ranking').carousel('cycle');
-            $("#carousel-ranking").fadeIn(1000);
-            }, 2000);
+        //    $('#load').show();
+          //  $("#carousel-ranking").hide();
+            //console.log('Requesting data...');
+            //setTimeout(() => {
+          //  $('#load').hide();
+            //$('#carousel-ranking').carousel('cycle');
+            //$("#carousel-ranking").fadeIn(1000);
+            //}, 2000);
            // renderData(JSON.parse(dataTemp));
             /*$.ajax({
                 url: 'http://127.0.0.1:8000/webscraper/scrape/',
