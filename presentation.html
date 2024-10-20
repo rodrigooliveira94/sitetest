@@ -341,10 +341,10 @@
         $(document).ready(function() {
             alert("teste")         
             $('#carousel-ranking').carousel('pause');   
-            /*requestData();    
+            requestData();    
             setInterval(() => {
                 requestData();    
-            }, 1200000);*/
+            }, 1200000);
         });
 
         function requestData() {
@@ -363,7 +363,7 @@
                 '<td>Rodrigo Oliveira</td><td>1250 pts.</td></tr>');
 
         //    $('#load').show();
-          //  $("#carousel-ranking").hide();
+            $("#carousel-ranking").hide();
             //console.log('Requesting data...');
             //setTimeout(() => {
           //  $('#load').hide();
@@ -390,7 +390,6 @@
             });*/
         }
 
-        requestData();
 /*
         function renderData(data){
             var tr = '';
