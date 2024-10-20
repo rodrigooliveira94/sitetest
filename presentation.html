@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/bootstrap.min.css" rel="stylesheet" >
-    <title>v1.2</title>
+    <title>v1.3</title>
     <style>
         body{
             background-image: url('./assests/img/kosmos.jpg');
@@ -342,9 +342,13 @@
             alert("teste")         
             $('#carousel-ranking').carousel('pause');   
             requestData();    
-            setInterval(() => {
+            /*setInterval(() => {
                 requestData();    
-            }, 1200000);
+            }, 1200000);*/
+
+            setInterval(
+                $('#carousel-ranking').carousel('next')
+            , 10000);
         });
 
         function requestData() {
