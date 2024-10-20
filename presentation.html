@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/bootstrap.min.css" rel="stylesheet" >
-    <title>v1.5</title>
+    <title>v1.6</title>
     <style>
         body{
             background-image: url('./assests/img/kosmos.jpg');
@@ -65,8 +65,8 @@
                 <img src="./assests/img/logo.png" class="d-block mx-auto logo" alt="Responsive image">
             </td>
             <td class="center" align="center">
-                <img src="./assests/img/load.gif" id="load" style="margin: auto;">
-                <div id="carousel-ranking" class="carousel slide w-100" data-ride="carousel" data-interval="10000" data-pause="false" >
+                <img src="./assests/img/load.gif" id="load" width="50%" style="margin: auto;">
+                <div id="carousel-ranking" class="carousel slide w-100" style="display: none;" data-ride="carousel" data-interval="10000" data-pause="false" >
                     <div class="carousel-inner">
                         <!--CATEGORIA ESPECIAL-->
                         <div class="carousel-item active">
@@ -352,7 +352,6 @@
 
         function requestData() {
             $("#load").hide();
-            alert('teste');
             renderData(JSON.parse(dataTemp));
             /*$.ajax({
                 url: 'http://127.0.0.1:8000/webscraper/scrape/',
@@ -377,20 +376,21 @@
         function renderData(data){
             var tr = '';
             var cont = 1;
-            alert(cont)
-           /* data.forEach((d, index) => {
-                tr += `<tr>
-                        <td align="center">
-                            ${d.position}
-                            &nbsp;&nbsp;&nbsp;
-                            <img width="55" height="55" style="border-radius: 50%;" align="center" src="${d.image}" alt="${index + 1}">
-                        </td>
-                        <td>${d.name}</td>
-                        <td>${d.score} pts.</td>
-                       </tr>`;
+        
+            for (var i = 0; i < data.length; i++) {
+                var d = data[i];
+                tr += '<tr>' +
+                        '<td align="center">' +
+                            d.position +
+                            '&nbsp;&nbsp;&nbsp;' +
+                            '<img width="55" height="55" style="border-radius: 50%;" align="center" src="' + d.image + '" alt="' + (i + 1) + '">' +
+                        '</td>' +
+                        '<td>' + d.name + '</td>' +
+                        '<td>' + d.score + ' pts.</td>' +
+                      '</tr>';
 
-                if ((index + 1) % 8 === 0) {
-                    const category = Math.floor(index / 8);
+                if ((i + 1) % 8 === 0) {
+                    var category = Math.floor(i / 8);
                     switch (category) {
                         case 0:
                             $('#ranking-cat-especial').html(tr);
@@ -419,11 +419,11 @@
                     }
                     tr = '';
                 }
-            });*/
+            }
             
         //    $('#load').hide();
-          //  $('#carousel-ranking').carousel('cycle');
-           /// $("#carousel-ranking").fadeIn(1000);
+            $('#carousel-ranking').carousel('cycle');
+            $("#carousel-ranking").fadeIn(1000);
         }
 /*
         function renderErrorScenary() {
